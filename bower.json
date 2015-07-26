@@ -1,0 +1,13 @@
+{
+  "name": "LifeIsAwesome",
+  "version": "1.0.0",
+  "authors": [
+    "Martin Doubravsky <martin@avocadoexperience.co>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "animate.less": "*",
+    "jquery": "~2.1.4"
+  }
+}

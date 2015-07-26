@@ -1,0 +1,239 @@
+@import "includes/animate.less";
+@textcolor: rgba(0,0,0,.3);
+
+html {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+html,body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: transparent url(../img/bg1.jpg) no-repeat center center;
+    background-size: cover;
+    color: @textcolor;
+    font-family: "HelveticaNeueLight", "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", "Arial", sans-serif;
+    text-align: center;
+    font-size: 16px;
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-backface-visibility: hidden;
+    position: relative;
+    &:before {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        left: 0; right: 0;
+        top: 0; bottom: 0;
+        background-image: radial-gradient(circle farthest-side at center, rgba(255,255,255,.7), rgba(255,255,255,.2));
+        .animated;
+        .fadeIn;
+        animation-delay: .8s;
+
+//         background-color: rgba(255,255,255,.6);
+    }
+}
+
+h1,h2 {
+    font: ~"0/0" a;
+    color: transparent;
+    text-shadow: none;
+    background-color: transparent;
+    border: 0;
+}
+
+body > div > div {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+img {
+    display: inline-block;
+    margin-bottom: 60px;
+    .animated;
+    .animated.long;
+//     .fadeInDown;
+//     .tada;
+    .bounceIn;
+}
+img:first-child {
+    animation-delay: .8s;
+}
+img:nth-child(2) {
+    animation-delay: .85s;
+}
+img:nth-child(3) {
+    animation-delay: .9s;
+}
+img:nth-child(4) {
+    animation-delay: .95s;
+}
+img:nth-child(6) {
+    animation-delay: 1s;
+}
+img:nth-child(7) {
+    animation-delay: 1.05s;
+}
+img:nth-child(9) {
+    animation-delay: 1.1s;
+}
+img:nth-child(10) {
+    animation-delay: 1.15s;
+}
+img:nth-child(11) {
+    animation-delay: 1.2s;
+}
+img:nth-child(12) {
+    animation-delay: 1.25s;
+}
+img:nth-child(13) {
+    animation-delay: 1.3s;
+}
+img:nth-child(14) {
+    animation-delay: 1.35s;
+}
+img:nth-child(15) {
+    animation-delay: 1.4s;
+}
+
+p {
+    margin: 0;
+    line-height: 1.3;
+    font-size: 19px;
+}
+
+footer {
+    position: absolute;
+    width: 100%;
+    bottom: 24px;
+    left: 0;
+text-align: center;
+    .animated;
+    .fadeInUp;
+    animation-delay: 1.8s;
+}
+
+footer p:first-child {
+    margin-bottom: .6em;
+    .animated;
+    .animated.longer;
+    .bounce;
+    animation-delay: 1.6s;
+    color: fadein(@textcolor,30%);
+}
+
+footer svg {
+    width: 17px;
+    height: 19px;
+    position: relative;
+    top: 3px;
+}
+
+a {
+    color: @textcolor;
+    font-weight: 300;
+    transition: .2s all;
+    text-decoration: none;
+}
+
+a:hover,a:focus {
+    color: #333;
+}
+
+small {
+    font-size: 12px;
+    font-weight: 200;
+//     color: rgba(255,255,255,.3);
+}
+
+@media (max-width: 480px){
+    body {
+//         transform: scale(.6);
+    }
+    body > div {
+        xdiv {
+            top: 0;
+            left: 0;
+            transform: none;
+        }
+    }
+    p {
+        font-size: 12px;    
+    }
+    small {
+        font-size: 9px;
+    }
+    img {
+        margin-bottom: 20px;
+    }
+    img[src*="l.gif"] {
+        width: 30px;
+        height: 35px;
+    }
+    img[src*="i.gif"] {
+        width: 26px;
+        height: 35px;
+    }
+    img[src*="f.gif"] {
+        width: 23px;
+        height: 35px;
+    }
+    img[src*="e.gif"] {
+        width: 21px;
+        height: 35px;
+    }
+    img[src*="i2.gif"] {
+        width: 38px;
+        height: 35px;
+    }
+    img[src*="s.gif"] {
+        width: 26px;
+        height: 35px;
+    }
+    img[src*="a.gif"] {
+        width: 40px;
+        height: 35px;
+    }
+    img[src*="w.gif"] {
+        width: 49px;
+        height: 35px;
+    }
+    img[src*="e2.gif"] {
+        width: 29px;
+        height: 35px;
+    }
+    img[src*="s2.gif"] {
+        width: 35px;
+        height: 35px;
+    }
+    img[src*="o.gif"] {
+        width: 44px;
+        height: 35px;
+    }
+    img[src*="m.gif"] {
+        width: 44px;
+        height: 35px;
+    }
+    img[src*="e3.gif"] {
+        width: 35px;
+        height: 35px;
+    }    
+}
+
+footer svg {
+    .animated;
+    .animated.long;
+    opacity: .7;
+}
+
+footer a[href*="avocado"]:hover svg,
+footer a[href*="avocado"]:focus svg {
+	.swing;
+}
