@@ -96,12 +96,10 @@ gulp.task("scripts", function(){
 
 gulp.task("images", function(){
     return gulp.src(config.paths.images.src)
-/*
         .pipe(imagemin({
             progressive: true,
             interlaced: true
         }))
-*/
         .pipe(gulp.dest(config.paths.images.dest));
 });
 
